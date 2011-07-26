@@ -33,7 +33,7 @@ def toRoman(n):
     """convert integer to Roman numeral"""
     if n >= 4000 or n <= 0:
         raise OutOfRangeError
-    elif type(n) != int:
+    elif not isinstance(n, int):
         raise NotIntegerError
 
     romanNumeral = ''
